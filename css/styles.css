@@ -871,13 +871,13 @@ html {
   color: var(--primary-title-color);
 }
 
-.backdrop__label {
+.backdrop-form__label {
   display: block;
   position: relative;
   margin: 0px 0px 28px 0px;
 }
 
-.backdrop__input {
+.backdrop-form__input {
   padding: 11px 16px 11px 42px;
   height: 40px;
   width: 100%;
@@ -890,16 +890,16 @@ html {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop__input:focus ~ .backdrop__icon {
+.backdrop-form__input:focus ~ .backdrop-form__icon {
   fill: var(--accent-color);
 }
 
-.backdrop__input:focus {
+.backdrop-form__input:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
 
-.backdrop__icon {
+.backdrop-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -907,7 +907,7 @@ html {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop__label-text {
+.backdrop-form__label-text {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -922,13 +922,13 @@ html {
   color: var(--primary-text-color);
 }
 
-.backdrop__label-textarea {
+.backdrop-form__label-textarea {
   display: block;
   position: relative;
   margin: 0px 0px 20px 0px;
 }
 
-.backdrop__textarea {
+.backdrop-form__textarea {
   position: relative;
   display: block;
   width: 100%;
@@ -942,7 +942,7 @@ html {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop__textarea::placeholder {
+.backdrop-form__textarea::placeholder {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 12px;
@@ -952,11 +952,11 @@ html {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.backdrop__textarea:focus {
+.backdrop-form__textarea:focus {
   border: 1px solid var(--accent-color);
 }
 
-.backdrop__checkbox-label {
+.backdrop-form__checkbox-label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -964,7 +964,7 @@ html {
   cursor: pointer;
 }
 
-.backdrop__checkbox {
+.backdrop-form__checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -975,7 +975,7 @@ html {
   overflow: hidden;
 }
 
-.backdrop__icon-checkbox-wrapper {
+.backdrop-form__icon-checkbox-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -988,7 +988,7 @@ html {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop__check-text {
+.backdrop-form__check-text {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
@@ -999,22 +999,30 @@ html {
   user-select: none;
 }
 
-.backdrop__icon-checkbox {
+.backdrop-form__check-link {
+  display: inline-block;
+  line-height: 0.9em;
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.backdrop-form__icon-checkbox {
   fill: transparent;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop__checkbox:checked ~ .backdrop__icon-checkbox-wrapper {
+.backdrop-form__checkbox:checked ~ .backdrop-form__icon-checkbox-wrapper {
   border: 2px solid transparent;
   border-radius: 2px;
   background-color: var(--accent-color);
 }
 
-.backdrop__checkbox:checked + * .backdrop__icon-checkbox {
+.backdrop-form__checkbox:checked + * .backdrop-form__icon-checkbox {
   fill: #ffffff;
 }
 
-.backdrop__button-close {
+.backdrop-form__button-close {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1030,6 +1038,6 @@ html {
   cursor: pointer;
 }
 
-.backdrop__button-close:hover {
+.backdrop-form__button-close:hover {
   fill: var(--accent-color);
 }
