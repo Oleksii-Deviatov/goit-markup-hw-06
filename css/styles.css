@@ -976,8 +976,8 @@ html {
   width: 15px;
   height: 15px;
   margin-right: 5px;
-  background-color: var(--primary-white-color);
-  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  border: 2px solid var(--primary-title-color);
   border-radius: 2px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1005,9 +1005,6 @@ html {
 
 .backdrop__checkbox:checked + * .backdrop__icon-checkbox {
   fill: #ffffff;
-}
-
-.backdrop__button {
 }
 
 .backdrop__button-close {
