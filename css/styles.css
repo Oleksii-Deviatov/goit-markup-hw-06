@@ -169,7 +169,8 @@ html {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/imgs/Hero_img.jpg");
+    url("../images/imgs/Hero_img.jpg"),
+    linear-gradient(to right, #c4c4c4, #c4c4c4);
 
   background-repeat: no-repeat;
   background-position: center;
