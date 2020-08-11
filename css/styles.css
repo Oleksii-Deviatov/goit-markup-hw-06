@@ -26,7 +26,6 @@ html {
 /* хедер */
 .header {
   outline: 1px solid #ececec;
-  outline-offset: -1px;
 }
 
 .header__container {
@@ -146,8 +145,8 @@ html {
   content: "";
   display: block;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -1px;
+  right: 0px;
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 3px;
